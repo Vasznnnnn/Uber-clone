@@ -1,6 +1,7 @@
 package com.apps.rapido.model.contact;
 
 
+import com.apps.rapido.model.enums.ContactType;
 import lombok.Data;
 
 @Data
@@ -13,21 +14,6 @@ public class Contact {
     public Contact(String contactName, PhoneNumber contactNumber) {
         this.contactName = contactName;
         this.contactNumber = contactNumber;
-    }
+    };
 
-    public String getContactName() {
-        return contactName;
-    }
-
-    public void setContactName(String contactName) {
-        this.contactName = contactName;
-    }
-
-    public PhoneNumber getContactNumber() {
-        return contactNumber;
-    }
-
-    public void setContactNumber(PhoneNumber contactNumber) {
-        this.contactNumber = contactNumber;
-    }
 }
